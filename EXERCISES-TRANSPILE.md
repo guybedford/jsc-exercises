@@ -68,7 +68,7 @@ export function getName () {
 
 Update `test.js` to import `hello` from `say-name/say-name.js`.
 
-Run `node say-name/say-name.js`.
+Run `node test.js`.
 
 If feeling adventurous, try using `--map get-name=../get-name.js#get-name` to see how nested interface mappings can be supported.
 
