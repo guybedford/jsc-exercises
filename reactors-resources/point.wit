@@ -1,0 +1,16 @@
+package local:point
+
+interface objects {
+  resource point {
+    constructor (x: float32, y: float32)
+    get-x: func () -> float32
+    get-y: func () -> float32
+    eq: func (other: borrow<point>) -> bool
+    dot-product: func (other: borrow<point>) -> float32
+    origin: static func () -> point
+  }
+}
+
+world point {
+  export objects
+}

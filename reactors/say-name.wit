@@ -1,0 +1,8 @@
+package local:get-name
+
+world get-name {
+  import get-name: interface {
+    get-name: func() -> string
+  }
+  export hello: func() -> string 
+}

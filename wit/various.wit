@@ -1,0 +1,13 @@
+package local:js
+
+world various {
+
+  record options {
+    num: u32,
+    str: string,
+    opt: option<u32>,
+    buffer: list<u8>
+  }
+
+  export various-args: func (opts: options) -> result<string, string>
+}
